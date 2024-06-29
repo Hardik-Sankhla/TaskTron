@@ -29,40 +29,48 @@ AutoTasker is a web application designed to automate various tasks through voice
 
 ### Clone the repository
 
-```bash
-git clone https://github.com/yourusername/autotasker.git
+bash
+```
+git clone [https://github.com/yourusername/autotasker.git](https://github.com/Hardik-Sankhla/TaskTron.git)
+
 cd autotasker
 Setup Virtual Environment
 Create and activate a virtual environment:
-
+```
 bash
+```
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install Dependencies
 Install the required Python packages using the requirements.txt file:
-
+```
 bash
+```
 Copy code
 pip install -r requirements.txt
 Configuration
 Before running the application, make sure to configure your email settings in the send_email function in the app.py file:
-
+```
 python
+```
 Copy code
 sender_email = "your_email@example.com"
 sender_password = "your_email_password"
 Replace these values with your actual email and password.
-
+```
 Run the Application
 Start the Flask application with SocketIO:
 
 bash
+```
 Copy code
 python app.py
 Open your browser and navigate to http://localhost:5000 to view the application.
+```
 
 File Structure
+```
 arduino
 Copy code
 AutoTasker/
@@ -99,7 +107,10 @@ AutoTasker/
 ├── requirements.txt
 ├── README.md
 └── autotasker.log
-Usage
+
+```
+#Usage
+
 Voice Commands
 The application listens for voice commands and executes them. Some of the supported commands include:
 
@@ -121,6 +132,8 @@ The application listens for voice commands and executes them. Some of the suppor
 "Save Notebook"
 "Open Media Player"
 "Open LinkedIn"
+
+
 Sending Emails
 To send an email, the voice command should include "send email". The application will prompt for the recipient's email address, subject, and message.
 
@@ -129,6 +142,7 @@ The application provides routes to download YouTube videos and audio:
 
 /download_video
 /download_audio
+
 Real-time Server Logs
 Server logs and recognized voice commands are displayed in real-time on the web interface.
 
@@ -141,5 +155,4 @@ Make your changes
 Commit your changes (git commit -am 'Add new feature')
 Push to the branch (git push origin feature-branch)
 Create a new Pull Request
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
