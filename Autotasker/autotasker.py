@@ -79,7 +79,10 @@ def execute_command(command):
         "terminal create notebook": lambda: os.system("start cmd /k jupyter notebook"),
         "save notebook": lambda: "Saving current notebook",
         "media player": lambda: os.system("start wmplayer"),
-        "linkedin": lambda: os.system("start chrome https://www.linkedin.com")
+        "linkedin": lambda: os.system("start chrome https://www.linkedin.com"),
+        "connect chatbot": lambda: os.system("start chrome http://127.0.0.1:5000/TaskTron"),
+        "home": lambda: os.system("start chrome http://127.0.0.1:5000"),
+        "contact": lambda: os.system("http://127.0.0.1:5000/contact"),
     }
 
     for keyword, function in command_keywords.items():
@@ -168,6 +171,14 @@ def stop_listening():
     listening.clear()
     log_message("Stopped listening for voice commands.")
     return jsonify({'status': 'Listening stopped'})
+
+@app.route('/TaskTron')
+def chatbot():
+    return render_template('TaskTron.html')
+
+@app.route('/chat')
+def chat():
+    return render_template('chat.html')
 
 if __name__ == '__main__':
     # Start the voice recognition thread
