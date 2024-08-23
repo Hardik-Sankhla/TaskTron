@@ -95,21 +95,18 @@ cd TaskTron
 Setup Virtual Environment
 Create and activate a virtual environment:
 
-bash
-Copy code
+
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install Dependencies
 Install the required Python packages using the requirements.txt file:
 
-bash
-Copy code
+
 pip install -r requirements.txt
 Configuration
 Before running the application, configure your email settings in the send_email function within the app.py file:
 
 python
-Copy code
 sender_email = "your_email@example.com"
 sender_password = "your_email_password"
 Replace these placeholders with your actual email and password.
@@ -117,14 +114,14 @@ Replace these placeholders with your actual email and password.
 Running the Application
 Start the Flask application with SocketIO:
 
-bash
-Copy code
+
 python app.py
 Open your browser and navigate to http://localhost:5000 to view the application.
+```
 
-File Structure
-plaintext
-Copy code
+### File Structure
+
+```bash
 TaskTron/
 │
 ├── static/
@@ -159,7 +156,9 @@ TaskTron/
 ├── requirements.txt
 ├── README.md
 └── TaskTron.log
-Usage
+```
+
+### Usage :
 Voice Commands
 TaskTron listens for voice commands and executes them. Some of the supported commands include:
 
@@ -181,32 +180,40 @@ TaskTron listens for voice commands and executes them. Some of the supported com
 "Save Notebook"
 "Open Media Player"
 "Open LinkedIn"
-Sending Emails
+
+### Sending Emails
+
 To send an email, use the voice command "send email." The application will prompt for the recipient's email address, subject, and message.
 
-Downloading YouTube Videos and Audio
+### Downloading YouTube Videos and Audio
+
 TaskTron provides routes to download YouTube content:
 
 /download_video: Download YouTube videos.
 /download_audio: Download YouTube audio.
+
 Real-Time Server Logs
 Server logs and recognized voice commands are displayed in real-time on the web interface.
 
-Conclusion
+## Conclusion
 The TaskTron project successfully amalgamates advanced voice recognition, intelligent chatbot functionalities, and specialized Python, Machine Learning, and GenAIOps tasks into a single web-based task automation platform.
 Users can effortlessly execute system commands, manage emails, download multimedia content, and engage with an intuitive, feature-rich chatbot.
 The application offers real-time updates and comprehensive logging, significantly enhancing user interaction and task monitoring.
 
-Future Scope
+## Future Scope
+
 Enhanced Voice Command Recognition: Further improvement of voice command accuracy and expansion of supported commands.
 Expanded Automation Features: Inclusion of more system commands and integration with additional third-party services.
 User Authentication and Personalization: Implementation of user authentication for personalized settings and command history.
 Mobile Application Development: Creation of a mobile version of the application for enhanced accessibility.
 Integration with AI Services: Ongoing enhancement of AI capabilities for advanced command recognition, context understanding, and additional chatbot functionalities.
-Contributing
+
+## Contributing
+
 If you'd like to contribute to TaskTron, please follow these steps:
 
-Fork the repository.
+## Fork the repository.
+
 Create a new branch (git checkout -b feature-branch).
 Make your changes.
 Commit your changes (git commit -am 'Add new feature').
