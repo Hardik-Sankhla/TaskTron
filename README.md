@@ -28,7 +28,7 @@ TaskTron is a powerful web application designed to automate a wide variety of ta
 
 ## Chatbot Integrations
 
-The TaskTron chatbot has been upgraded with the following integrations to enhance its functionality and interactivity:
+The Autotasker chatbot has been upgraded with the following integrations to enhance its functionality and interactivity:
 
 - **Webchat**: Implemented via Botpress for seamless communication through a web interface.
 - **groq**: Utilized for advanced query processing, allowing efficient handling of complex tasks.
@@ -37,6 +37,21 @@ The TaskTron chatbot has been upgraded with the following integrations to enhanc
 - **Browser**: Enabled dynamic web interactions, allowing the chatbot to browse and retrieve information on the go.
 - **Charts**: Integrated real-time data visualization capabilities, supporting various chart types for immediate analysis.
 - **Chat for Botpress**: Ensured smooth HTTP-based interactions within the Botpress framework.
+
+### Chatbot Integration Visuals
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/1.png" alt="Integration 1" width="250"/></td>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/2.png" alt="Integration 2" width="250"/></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/3.png" alt="Integration 3" width="250"/></td>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/4.png" alt="Integration 4" width="250"/></td>
+    </tr>
+  </table>
+</div>
 
 ## Python Tasks Accomplished
 
