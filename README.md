@@ -178,7 +178,9 @@ Real-Time Server Logs
 Server logs and recognized voice commands are displayed in real-time on the web interface.
 
 Conclusion
-The TaskTron project successfully amalgamates advanced voice recognition, intelligent chatbot functionalities, and specialized Python, Machine Learning, and GenAIOps tasks into a single web-based task automation platform. Users can effortlessly execute system commands, manage emails, download multimedia content, and engage with an intuitive, feature-rich chatbot. The application offers real-time updates and comprehensive logging, significantly enhancing user interaction and task monitoring.
+The TaskTron project successfully amalgamates advanced voice recognition, intelligent chatbot functionalities, and specialized Python, Machine Learning, and GenAIOps tasks into a single web-based task automation platform.
+Users can effortlessly execute system commands, manage emails, download multimedia content, and engage with an intuitive, feature-rich chatbot.
+The application offers real-time updates and comprehensive logging, significantly enhancing user interaction and task monitoring.
 
 Future Scope
 Enhanced Voice Command Recognition: Further improvement of voice command accuracy and expansion of supported commands.
