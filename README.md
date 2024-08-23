@@ -1,19 +1,20 @@
-# TaskTron
-Task Automator
-
 markdown
 Copy code
-# AutoTasker
+# TaskTron
 
-AutoTasker is a web application designed to automate various tasks through voice commands. It includes features such as executing commands, sending emails, downloading YouTube videos and audio, and more.
+**Task Automator Web Application**
+
+## Overview
+
+TaskTron is a powerful web application designed to automate a wide variety of tasks through both voice and text commands. The application offers features such as executing system commands, sending emails, downloading YouTube videos and audio, and more. With real-time server logs and status updates, TaskTron provides an efficient and interactive experience for users.
 
 ## Features
 
-- Execute system commands via voice
-- Send emails with custom subjects and messages
-- Download YouTube videos and audio
-- Real-time server logs and status updates
-- User authentication and login
+- **Voice Command Execution**: Perform system commands via voice input.
+- **Email Automation**: Send emails with custom subjects and messages.
+- **YouTube Content Download**: Download videos and audio directly from YouTube.
+- **Real-Time Logs**: Monitor server logs and status updates in real-time.
+- **User Authentication**: Secure login and authentication for users.
 
 ## Requirements
 
@@ -27,53 +28,45 @@ AutoTasker is a web application designed to automate various tasks through voice
 
 ## Installation
 
-### Clone the repository
+### Clone the Repository
 
-bash
-```
-git clone [https://github.com/yourusername/autotasker.git](https://github.com/Hardik-Sankhla/TaskTron.git)
-
-cd autotasker
+```bash
+git clone https://github.com/Hardik-Sankhla/TaskTron.git
+cd TaskTron
 Setup Virtual Environment
 Create and activate a virtual environment:
-```
+
 bash
-```
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 Install Dependencies
 Install the required Python packages using the requirements.txt file:
-```
+
 bash
-```
 Copy code
 pip install -r requirements.txt
 Configuration
-Before running the application, make sure to configure your email settings in the send_email function in the app.py file:
-```
+Before running the application, configure your email settings in the send_email function within the app.py file:
+
 python
-```
 Copy code
 sender_email = "your_email@example.com"
 sender_password = "your_email_password"
-Replace these values with your actual email and password.
-```
-Run the Application
+Replace these placeholders with your actual email and password.
+
+Running the Application
 Start the Flask application with SocketIO:
 
 bash
-```
 Copy code
 python app.py
 Open your browser and navigate to http://localhost:5000 to view the application.
-```
 
 File Structure
-```
-arduino
+plaintext
 Copy code
-AutoTasker/
+TaskTron/
 │
 ├── static/
 │   ├── css/
@@ -106,13 +99,10 @@ AutoTasker/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── autotasker.log
-
-```
-#Usage
-
+└── TaskTron.log
+Usage
 Voice Commands
-The application listens for voice commands and executes them. Some of the supported commands include:
+TaskTron listens for voice commands and executes them. Some of the supported commands include:
 
 "Open Chrome"
 "Open Instagram"
@@ -132,27 +122,32 @@ The application listens for voice commands and executes them. Some of the suppor
 "Save Notebook"
 "Open Media Player"
 "Open LinkedIn"
-
-
 Sending Emails
-To send an email, the voice command should include "send email". The application will prompt for the recipient's email address, subject, and message.
+To send an email, use the voice command "send email." The application will prompt for the recipient's email address, subject, and message.
 
 Downloading YouTube Videos and Audio
-The application provides routes to download YouTube videos and audio:
+TaskTron provides routes to download YouTube content:
 
-/download_video
-/download_audio
-
-Real-time Server Logs
+/download_video: Download YouTube videos.
+/download_audio: Download YouTube audio.
+Real-Time Server Logs
 Server logs and recognized voice commands are displayed in real-time on the web interface.
 
 Contributing
-If you would like to contribute to this project, please follow these steps:
+If you'd like to contribute to TaskTron, please follow these steps:
 
-Fork the repository
-Create a new branch (git checkout -b feature-branch)
-Make your changes
-Commit your changes (git commit -am 'Add new feature')
-Push to the branch (git push origin feature-branch)
-Create a new Pull Request
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes.
+Commit your changes (git commit -am 'Add new feature').
+Push to the branch (git push origin feature-branch).
+Create a new Pull Request.
+csharp
+Copy code
+
+This is the Markdown code for the updated README file for your TaskTron project. You can copy and paste this code into your `README.md` file.
+
+
+
+
 
