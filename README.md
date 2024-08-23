@@ -43,12 +43,12 @@ The Autotasker chatbot has been upgraded with the following integrations to enha
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/1.png" alt="Integration 1" width="250"/></td>
-      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/2.png" alt="Integration 2" width="250"/></td>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/1.png" alt="Integration 1" width="450"/></td>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/2.png" alt="Integration 2" width="450"/></td>
     </tr>
     <tr>
-      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/3.png" alt="Integration 3" width="250"/></td>
-      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/4.png" alt="Integration 4" width="250"/></td>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/3.png" alt="Integration 3" width="450"/></td>
+      <td><img src="https://github.com/Hardik-Sankhla/TaskTron/blob/main/Chatbot/4.png" alt="Integration 4" width="450"/></td>
     </tr>
   </table>
 </div>
