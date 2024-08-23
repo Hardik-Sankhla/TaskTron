@@ -9,9 +9,18 @@ import speech_recognition as sr
 from threading import Thread, Event
 import logging
 from logging.handlers import RotatingFileHandler
+import mysql.connector
 
 app = Flask(__name__)
 socketio = SocketIO(app)
+
+# MySQL Database Configuration
+db = mysql.connector.connect(
+    host="localhost",
+    user="root",  # Use 'root' instead of 'root@localhost'
+    password="@Sank1009ks",  # Replace with your MySQL root password
+    database="NeuroHardikDB"  # Replace with your database name
+)
 
 # Initialize the recognizer
 recognizer = sr.Recognizer()
@@ -39,8 +48,8 @@ def log_message(message):
     socketio.emit('log', {'message': message})
 
 def send_email(receiver_email, custom_subject, custom_message):
-    sender_email = "your_email@example.com"
-    sender_password = "your_email_password"
+    sender_email = "penetration.tester.hardikk@gmail.com"
+    sender_password = "brdc qila wlci ytdd"  # Be careful with hardcoding passwords
 
     message = MIMEMultipart()
     message["From"] = sender_email
@@ -130,12 +139,25 @@ def listen_and_execute():
 @app.route('/')
 def index():
     return render_template('index.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
+    if request.method == 'POST':
+        name = request.form['name']
+        phone = request.form['phone']
+        email = request.form['email']
+
+        # Insert data into the database
+        cursor = db.cursor()
+        cursor.execute("INSERT INTO contacts (name, phone, email) VALUES (%s, %s, %s)", (name, phone, email))
+        db.commit()
+        cursor.close()
+
+        return f'Thank you for contacting us, {name}!'
     return render_template('contact.html')
 
 @app.route('/tools')
@@ -146,11 +168,13 @@ def tools():
 def home():
     return render_template('home.html')
 
-
-
-
-
-
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    email = request.form['email']
+    subject = "Thank you for subscribing!"
+    message = "Thank you for subscribing to our newsletter."
+    send_email(email, subject, message)
+    return f'Thank you for subscribing, {email}!'
 
 @app.route('/execute', methods=['POST'])
 def handle_execute():

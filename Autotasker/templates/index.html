@@ -2053,58 +2053,62 @@
             <p>
               TaskTron is a cutting-edge task automation web application designed to revolutionize the way you manage your daily activities. With TaskTron, you can effortlessly streamline your workflow, eliminate repetitive tasks, and focus on what truly matters. Whether you're an individual looking to boost personal productivity or a business aiming to enhance operational efficiency, TaskTron provides a robust and intuitive platform to automate tasks, saving you time and reducing stress.
             </p>
-            <div class="input-group2">
-              <input type="email" class="input2" id="Email" name="Email" placeholder="uiverse@verse.io" autocomplete="off">
-              <input class="button--submit" value="Subscribe" type="submit">
-            </div>
+            <form action="/subscribe" method="post">
+              <div class="input-group2">
+                <input type="email" class="input2" id="Email" name="email" placeholder="uiverse@verse.io" autocomplete="off" required>
+                <input class="button--submit" value="Subscribe" type="submit">
+              </div>
+            </form>
             <!-- <a href="">
               Read More
             </a> -->
-            
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
-  <!-- book section -->
-  <section class="book_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-         Contact Us
-        </h2>
-      </div>
-      <div class="">
-        <div class="col-md-12">
-          <div class="form_container">
-            <form action="">
-              <div>
-                <input type="text" class="form-control" placeholder="Your Name" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Phone Number" />
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Your Email" />
-              </div>
-              <div class="btn_box">
-                <button>
-                  Book Now
-                </button>
-              </div>
-            </form>
-          </div>
+<!-- book section -->
+<section class="book_section layout_padding">
+  <div class="container">
+    <div class="heading_container">
+      <h2>
+       Contact Us
+      </h2>
+    </div>
+    <div class="">
+      <div class="col-md-12">
+        <div class="form_container">
+          <form action="/contact" method="post">
+            <div>
+              <input type="text" class="form-control" name="name" placeholder="Your Name" required />
+            </div>
+            <div>
+              <input type="text" class="form-control" name="phone" placeholder="Phone Number" required />
+            </div>
+            <div>
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="btn_box">
+              <button type="submit">
+                Book Now
+              </button>
+            </div>
+          </form>
         </div>
-        <div class="col-md-6">
-          <div class="map_container ">
-            <div id="googleMap"></div>
-          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="map_container ">
+          <div id="googleMap"></div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end book section -->
+  </div>
+</section>
+<!-- end book section -->
+
+
 
   <!-- footer section -->
   <footer class="footer_section">
